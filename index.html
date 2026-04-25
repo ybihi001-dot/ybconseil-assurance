@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Youssef Bihi - Conseil Assurance AI Expert Maroc & Canada</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+header { background: #004aad; color: white; padding: 0.8rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.2); }
+header nav.container { display: flex; align-items: center; justify-content: space-between; }
+.logo { font-size: 1.5rem; font-weight: 900; color: white; }
+.logo span { color: #ff6b00; }
+nav ul { display: flex; gap: 1.5rem; }
+nav ul li a { color: rgba(255,255,255,0.85); font-size: 0.9rem; transition: color 0.3s; }
+nav ul li a:hover { color: #ff6b00; }
+.btn-nav { background: #ff6b00; color: white; padding: 8px 20px; border-radius: 25px; font-weight: bold; font-size: 0.85rem; transition: background 0.3s; }
+.btn-nav:hover { background: #e55a00; }
+.hero { background: linear-gradient(135deg, #004aad 0%, #0066e0 50%, #003d8f 100%); color: white; text-align: center; padding: 160px 0 100px; position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1920&q=80') center/cover; opacity: 0.1; }
+.hero .container { position: relative; z-index: 1; }
+.hero-badge { background: rgba(255,107,0,0.2); border: 1px solid rgba(255,107,0,0.5); color: #ffaa66; padding: 8px 20px; border-radius: 25px; display: inline-block; margin-bottom: 1.5rem; font-size: 0.9rem; }
+.hero h1 { font-size: 3rem; font-weight: 900; margin-bottom: 1.5rem; line-height: 1.2; }
+.hero h1 span { color: #ff6b00; }
+.hero p { font-size: 1.15rem; color: rgba(255,255,255,0.85); max-width: 650px; margin: 0 auto 2rem; }
+.hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
+.btn { background: #ff6b00; color: white; padding: 14px 30px; border-radius: 8px; font-weight: bold; display: inline-block; transition: all 0.3s; border: none; cursor: pointer; font-size: 1rem; }
+.btn:hover { background: #e55a00; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(255,107,0,0.4); }
+.btn-outline { background: transparent; border: 2px solid white; color: white; }
+.btn-outline:hover { background: white; color: #004aad; }
+.hero-stats { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+.stat { text-align: center; }
+.stat strong { display: block; font-size: 2rem; font-weight: 900; color: #ff6b00; }
+.stat span { font-size: 0.85rem; color: rgba(255,255,255,0.75); }
+.section { padding: 80px 0; }
+.section-header { text-align: center; margin-bottom: 3rem; }
+.tag { background: #e8f0fe; color: #004aad; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; display: inline-block; margin-bottom: 1rem; }
+.section-header h2 { font-size: 2.2rem; font-weight: 900; color: #1a1a2e; margin-bottom: 0.8rem; }
+.section-header p { color: #666; font-size: 1.05rem; max-width: 550px; margin: 0 auto; }
+.services { background: #f8faff; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,74,173,0.08); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid #e8f0fe; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,74,173,0.15); }
+.card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+.card h3 { color: #004aad; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.8rem; }
+.card p { color: #555; font-size: 0.95rem; margin-bottom: 1rem; }
+.card-link { color: #ff6b00; font-weight: 600; font-size: 0.9rem; }
+footer { background: #0d0d1a; color: rgba(255,255,255,0.8); padding: 50px 0 20px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+.footer-grid h4 { color: white; font-weight: 700; margin-bottom: 1rem; }
+.footer-grid ul li { margin-bottom: 0.5rem; font-size: 0.9rem; color: rgba(255,255,255,0.6); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
+@media (max-width: 768px) { .hero h1 { font-size: 2rem; } .hero-stats { gap: 1.5rem; } nav ul { display: none; } .footer-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+<nav class="container">
+<div class="logo">YB<span>Conseil</span></div>
+<ul>
+<li><a href="#accueil">Accueil</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<a href="#contact" class="btn-nav">Devis Gratuit</a>
+</nav>
+</header>
+<section id="accueil" class="hero">
+<div class="container">
+<div class="hero-badge">Expert Certifié AXA | 7+ ans d'expérience</div>
+<h1>Conseil Assurance <span>Intelligence Artificielle</span> & Prévoyance</h1>
+<p>Protection optimale pour freelances, entrepreneurs et familles — Maroc & Canada. Analyse IA de vos contrats, comparaisons personnalisées, accompagnement complet.</p>
+<div class="hero-btns">
+<a href="#contact" class="btn">Devis Gratuit 2min</a>
+<a href="#services" class="btn btn-outline">Découvrir les Services</a>
+</div>
+<div class="hero-stats">
+<div class="stat"><strong>500+</strong><span>Clients Satisfaits</span></div>
+<div class="stat"><strong>7+</strong><span>Ans d'Expérience</span></div>
+<div class="stat"><strong>98%</strong><span>Taux Satisfaction</span></div>
+<div class="stat"><strong>24h</strong><span>Réponse Garantie</span></div>
+</div>
+</div>
+</section>
+<section id="services" class="services section">
+<div class="container">
+<div class="section-header">
+<span class="tag">Nos Expertises</span>
+<h2>Services Assurance Personnalisés</h2>
+<p>Solutions adaptées à votre profil, avec analyse IA pour optimiser votre couverture</p>
+</div>
+<div class="grid">
+<div class="card">
+<div class="card-icon">🤖</div>
+<h3>Analyse IA Contrats</h3>
+<p>Audit intelligent de vos contrats AXA, Matrisk et autres. Détection des clauses cachées, comparaisons automatisées et recommandations personnalisées.</p>
+<a href="#contact" class="card-link">En savoir plus →</a>
+</div>
+<div class="card">
+<div class="card-icon">🛡️</div>
+<h3>Prévoyance & Vie</h3>
+<p>Couverture décès, invalidité, arrêt de travail. Solutions AXA Avizen pour freelances et indépendants avec garanties adaptées au Maroc et Canada.</p>
+<a href="#contact" class="card-link">En savoir plus →</a>
+</div>
+<div class="card">
+<div class="card-icon">🚗</div>
+<h3>Assurance Auto</h3>
+<p>Comparateur multi-compagnies, optimisation de vos primes, assistance sinistres. Couverture tous risques ou au tiers selon votre budget.</p>
+<a href="#contact" class="card-link">En savoir plus →</a>
+</div>
+<div class="card">
+<div class="card-icon">💼</div>
+<h3>Assurance Freelance</h3>
+<p>RC Professionnelle, protection revenus, mutuelle santé. Package complet pour travailleurs indépendants et entrepreneurs au Maroc.</p>
+<a href="#contact" class="card-link">En savoir plus →</a>
+</div>
+<div class="card">
+<div class="card-icon">🏠</div>
+<h3>Assurance Habitation</h3>
+<p>Protection complète de votre logement, responsabilité civile, catastrophes naturelles. Formules modulables selon vos besoins.</p>
+<a href="#contact" class="card-link">En savoir plus →</a>
+</div>
+<div class="card">
+<div class="card-icon">🌍</div>
+<h3>Immigration Canada</h3>
+<p>Accompagnement assurances pour votre projet d'immigration. Couverture voyage, santé internationale, transfert de contrats.</p>
+<a href="#contact" class="card-link">En savoir plus →</a>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="logo">YB<span>Conseil</span></div>
+<p>Expert en assurance et conseil financier. Solutions IA pour optimiser votre protection.</p>
+</div>
+<div>
+<h4>Services</h4>
+<ul><li>Prévoyance & Vie</li><li>Assurance Auto</li><li>RC Professionnelle</li><li>Habitation</li></ul>
+</div>
+<div>
+<h4>Liens Utiles</h4>
+<ul><li><a href="#accueil">Accueil</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul>
+</div>
+<div>
+<h4>Suivez-moi</h4>
+<ul><li>LinkedIn</li><li>YouTube</li><li>TikTok</li></ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Youssef Bihi Conseil Assurance. Tous droits réservés.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
