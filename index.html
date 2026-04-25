@@ -55,7 +55,7 @@ footer { background: #0d0d1a; color: rgba(255,255,255,0.8); padding: 50px 0 20px
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
 @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .hero-stats { gap: 1.5rem; } nav ul { display: none; } .footer-grid { grid-template-columns: 1fr; } }
 </style>
-</head>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script><script type="text/javascript">emailjs.init("TvFsPbYdIxmRvvSGy");</script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script><script type="text/javascript">emailjs.init("TvFsPbYdIxmRvvSGy");</script></head>
 <body>
 <header>
 <nav class="container">
@@ -153,7 +153,7 @@ footer { background: #0d0d1a; color: rgba(255,255,255,0.8); padding: 50px 0 20px
 </div>
 <div style="background: white; padding: 2rem; border-radius: 12px; color: #333;">
 <h3 style="color: #004aad; margin-bottom: 1.5rem;">Demande de Devis</h3>
-<form action="https://formsubmit.co/ybihi@gmail.com" method="POST">
+<form id="contact-form">
 <div style="margin-bottom: 1rem;">
 <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nom complet</label>
 <input type="text" name="nom" required style="width: 100%; padding: 10px; border: 1px solid #dde3f0; border-radius: 8px; font-size: 0.95rem;">
@@ -180,7 +180,7 @@ footer { background: #0d0d1a; color: rgba(255,255,255,0.8); padding: 50px 0 20px
 <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message</label>
 <textarea name="message" rows="4" style="width: 100%; padding: 10px; border: 1px solid #dde3f0; border-radius: 8px; font-size: 0.95rem;"></textarea>
 </div>
-<button type="submit" class="btn" style="width: 100%; background: #ff6b00; color: white; padding: 14px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 1rem;">Envoyer ma Demande</button>
+<button type="submit" class="btn" style="width: 100%; background: #ff6b00; color: white; padding: 14px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 1rem;">Envoyer ma Demande</button><p id="form-status" style="margin-top:1rem;font-weight:bold;"></p><script>document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();var s=document.getElementById('form-status');s.textContent='Envoi en cours...';s.style.color='#004aad';emailjs.sendForm('service_q673b1m','yahug4t',this).then(function(){s.textContent='Message envoyé avec succès ! Je vous contacte dans 24h.';s.style.color='green';document.getElementById('contact-form').reset();},function(err){s.textContent='Erreur: '+JSON.stringify(err);s.style.color='red';});});</script><p id="form-status" style="margin-top:1rem;font-weight:bold;"></p><script>document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();var s=document.getElementById('form-status');s.textContent='Envoi en cours...';s.style.color='#004aad';emailjs.sendForm('service_q673b1m','yahug4t',this).then(function(){s.textContent='Message envoyé avec succès ! Je vous contacte dans 24h.';s.style.color='green';document.getElementById('contact-form').reset();},function(err){s.textContent='Erreur: '+JSON.stringify(err);s.style.color='red';});});</script><p id="form-status" style="margin-top:1rem;font-weight:bold;"></p><script>document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();var s=document.getElementById('form-status');s.textContent='Envoi en cours...';s.style.color='#004aad';emailjs.sendForm('service_q673b1m','yahug4t',this).then(function(){s.textContent='Message envoyé avec succès ! Je vous contacte dans 24h.';s.style.color='green';document.getElementById('contact-form').reset();},function(err){s.textContent='Erreur: '+JSON.stringify(err);s.style.color='red';});});</script>
 </form>
 </div>
 </div>
