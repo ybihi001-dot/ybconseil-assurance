@@ -1,211 +1,720 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Youssef Bihi - Conseil Assurance AI Expert Maroc & Canada</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; }
-a { text-decoration: none; color: inherit; }
-ul { list-style: none; }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-header { background: #004aad; color: white; padding: 0.8rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.2); }
-header nav.container { display: flex; align-items: center; justify-content: space-between; }
-.logo { font-size: 1.5rem; font-weight: 900; color: white; }
-.logo span { color: #ff6b00; }
-nav ul { display: flex; gap: 1.5rem; }
-nav ul li a { color: rgba(255,255,255,0.85); font-size: 0.9rem; transition: color 0.3s; }
-nav ul li a:hover { color: #ff6b00; }
-.btn-nav { background: #ff6b00; color: white; padding: 8px 20px; border-radius: 25px; font-weight: bold; font-size: 0.85rem; transition: background 0.3s; }
-.btn-nav:hover { background: #e55a00; }
-.hero { background: linear-gradient(135deg, #004aad 0%, #0066e0 50%, #003d8f 100%); color: white; text-align: center; padding: 160px 0 100px; position: relative; overflow: hidden; }
-.hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1920&q=80') center/cover; opacity: 0.1; }
-.hero .container { position: relative; z-index: 1; }
-.hero-badge { background: rgba(255,107,0,0.2); border: 1px solid rgba(255,107,0,0.5); color: #ffaa66; padding: 8px 20px; border-radius: 25px; display: inline-block; margin-bottom: 1.5rem; font-size: 0.9rem; }
-.hero h1 { font-size: 3rem; font-weight: 900; margin-bottom: 1.5rem; line-height: 1.2; }
-.hero h1 span { color: #ff6b00; }
-.hero p { font-size: 1.15rem; color: rgba(255,255,255,0.85); max-width: 650px; margin: 0 auto 2rem; }
-.hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
-.btn { background: #ff6b00; color: white; padding: 14px 30px; border-radius: 8px; font-weight: bold; display: inline-block; transition: all 0.3s; border: none; cursor: pointer; font-size: 1rem; }
-.btn:hover { background: #e55a00; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(255,107,0,0.4); }
-.btn-outline { background: transparent; border: 2px solid white; color: white; }
-.btn-outline:hover { background: white; color: #004aad; }
-.hero-stats { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
-.stat { text-align: center; }
-.stat strong { display: block; font-size: 2rem; font-weight: 900; color: #ff6b00; }
-.stat span { font-size: 0.85rem; color: rgba(255,255,255,0.75); }
-.section { padding: 80px 0; }
-.section-header { text-align: center; margin-bottom: 3rem; }
-.tag { background: #e8f0fe; color: #004aad; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; display: inline-block; margin-bottom: 1rem; }
-.section-header h2 { font-size: 2.2rem; font-weight: 900; color: #1a1a2e; margin-bottom: 0.8rem; }
-.section-header p { color: #666; font-size: 1.05rem; max-width: 550px; margin: 0 auto; }
-.services { background: #f8faff; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-.card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,74,173,0.08); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid #e8f0fe; }
-.card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,74,173,0.15); }
-.card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-.card h3 { color: #004aad; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.8rem; }
-.card p { color: #555; font-size: 0.95rem; margin-bottom: 1rem; }
-.card-link { color: #ff6b00; font-weight: 600; font-size: 0.9rem; }
-footer { background: #0d0d1a; color: rgba(255,255,255,0.8); padding: 50px 0 20px; }
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
-.footer-grid h4 { color: white; font-weight: 700; margin-bottom: 1rem; }
-.footer-grid ul li { margin-bottom: 0.5rem; font-size: 0.9rem; color: rgba(255,255,255,0.6); }
-.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
-@media (max-width: 768px) { .hero h1 { font-size: 2rem; } .hero-stats { gap: 1.5rem; } nav ul { display: none; } .footer-grid { grid-template-columns: 1fr; } }
-</style>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script><script type="text/javascript">emailjs.init("TvFsPbYdIxmRvvSGy");</script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script><script type="text/javascript">emailjs.init("TvFsPbYdIxmRvvSGy");</script></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="YB Conseil Assurance - Expert en assurance et prévoyance au Maroc et Canada. Solutions personnalisées pour entrepreneurs, freelances et familles.">
+  <meta name="keywords" content="assurance, prévoyance, conseil assurance Maroc, AXA, assurance vie, protection financière">
+  <meta name="author" content="Youssef Bihi">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="YB Conseil Assurance - Expert en Assurance & Prévoyance">
+  <meta property="og:description" content="Solutions d'assurance personnalisées pour entrepreneurs et familles au Maroc et Canada.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ybihi001-dot.github.io/ybconseil-assurance/">
+  
+  <link rel="canonical" content="https://ybihi001-dot.github.io/ybconseil-assurance/">
+  
+  <title>YB Conseil Assurance - Expert en Assurance & Prévoyance | Maroc & Canada</title>
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: #f8f9fa;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #004aad 0%, #0066cc 100%);
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+    
+    nav a:hover { opacity: 0.8; }
+    
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    
+    .hero {
+      background: linear-gradient(135deg, #004aad 0%, #0066cc 100%);
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: white;
+      color: #004aad;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+    
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .stat {
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #004aad;
+      text-align: center;
+    }
+    
+    .subtitle {
+      text-align: center;
+      color: #666;
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .service-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .service-card h3 {
+      color: #004aad;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+    
+    .service-card p {
+      color: #555;
+      line-height: 1.6;
+    }
+    
+    .publics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .public-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    
+    .public-card h3 {
+      color: #004aad;
+      margin: 1rem 0;
+      font-size: 1.3rem;
+    }
+    
+    .methode-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .step {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      position: relative;
+    }
+    
+    .step-number {
+      position: absolute;
+      top: -15px;
+      left: 20px;
+      background: #004aad;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+    
+    .step h3 {
+      color: #004aad;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .reassurance {
+      background: white;
+      padding: 3rem 2rem;
+      margin: 0 auto;
+      max-width: 1200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+    
+    .reassurance ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .reassurance li {
+      padding-left: 2rem;
+      position: relative;
+      color: #555;
+    }
+    
+    .reassurance li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #004aad;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+    
+    .testimonials {
+      background: #f8f9fa;
+    }
+    
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .testimonial {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      position: relative;
+    }
+    
+    .testimonial:before {
+      content: '"';
+      font-size: 4rem;
+      color: #004aad;
+      opacity: 0.2;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+    }
+    
+    .testimonial-text {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .testimonial-author {
+      font-weight: 600;
+      color: #004aad;
+    }
+    
+    .faq {
+      background: white;
+    }
+    
+    .faq-list {
+      max-width: 800px;
+      margin: 3rem auto 0;
+    }
+    
+    .faq-item {
+      background: #f8f9fa;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .faq-question {
+      padding: 1.5rem;
+      font-weight: 600;
+      color: #004aad;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .faq-answer {
+      padding: 0 1.5rem 1.5rem;
+      color: #555;
+      display: none;
+    }
+    
+    .faq-item.active .faq-answer { display: block; }
+    
+    .contact-form {
+      max-width: 600px;
+      margin: 3rem auto 0;
+      background: white;
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #333;
+      font-weight: 500;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 2px solid #e0e0e0;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+    
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #004aad;
+    }
+    
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    
+    button[type="submit"] {
+      width: 100%;
+      padding: 1rem;
+      background: #004aad;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    button[type="submit"]:hover {
+      background: #003a8c;
+    }
+    
+    #form-status {
+      margin-top: 1rem;
+      text-align: center;
+      font-weight: 500;
+    }
+    
+    footer {
+      background: #1a1a1a;
+      color: white;
+      padding: 3rem 2rem 1rem;
+      text-align: center;
+    }
+    
+    footer p {
+      opacity: 0.8;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1.1rem; }
+      nav ul { gap: 1rem; }
+      h2 { font-size: 2rem; }
+      section { padding: 3rem 1.5rem; }
+    }
+  </style>
+</head>
 <body>
-<header>
-<nav class="container">
-<div class="logo">YB<span>Conseil</span></div>
-<ul>
-<li><a href="#accueil">Accueil</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<a href="#contact" class="btn-nav">Devis Gratuit</a>
-</nav>
-</header>
-<section id="accueil" class="hero">
-<div class="container">
-<div class="hero-badge">Expert Certifié AXA | 7+ ans d'expérience</div>
-<h1>Conseil Assurance <span>Intelligence Artificielle</span> & Prévoyance</h1>
-<p>Protection optimale pour freelances, entrepreneurs et familles — Maroc & Canada. Analyse IA de vos contrats, comparaisons personnalisées, accompagnement complet.</p>
-<div class="hero-btns">
-<a href="#contact" class="btn">Devis Gratuit 2min</a>
-<a href="#services" class="btn btn-outline">Découvrir les Services</a>
-</div>
-<div class="hero-stats">
-<div class="stat"><strong>500+</strong><span>Clients Satisfaits</span></div>
-<div class="stat"><strong>7+</strong><span>Ans d'Expérience</span></div>
-<div class="stat"><strong>98%</strong><span>Taux Satisfaction</span></div>
-<div class="stat"><strong>24h</strong><span>Réponse Garantie</span></div>
-</div>
-</div>
-</section>
-<section id="services" class="services section">
-<div class="container">
-<div class="section-header">
-<span class="tag">Nos Expertises</span>
-<h2>Services Assurance Personnalisés</h2>
-<p>Solutions adaptées à votre profil, avec analyse IA pour optimiser votre couverture</p>
-</div>
-<div class="grid">
-<div class="card">
-<div class="card-icon">🤖</div>
-<h3>Analyse IA Contrats</h3>
-<p>Audit intelligent de vos contrats AXA, Matrisk et autres. Détection des clauses cachées, comparaisons automatisées et recommandations personnalisées.</p>
-<a href="#contact" class="card-link">En savoir plus →</a>
-</div>
-<div class="card">
-<div class="card-icon">🛡️</div>
-<h3>Prévoyance & Vie</h3>
-<p>Couverture décès, invalidité, arrêt de travail. Solutions AXA Avizen pour freelances et indépendants avec garanties adaptées au Maroc et Canada.</p>
-<a href="#contact" class="card-link">En savoir plus →</a>
-</div>
-<div class="card">
-<div class="card-icon">🚗</div>
-<h3>Assurance Auto</h3>
-<p>Comparateur multi-compagnies, optimisation de vos primes, assistance sinistres. Couverture tous risques ou au tiers selon votre budget.</p>
-<a href="#contact" class="card-link">En savoir plus →</a>
-</div>
-<div class="card">
-<div class="card-icon">💼</div>
-<h3>Assurance Freelance</h3>
-<p>RC Professionnelle, protection revenus, mutuelle santé. Package complet pour travailleurs indépendants et entrepreneurs au Maroc.</p>
-<a href="#contact" class="card-link">En savoir plus →</a>
-</div>
-<div class="card">
-<div class="card-icon">🏠</div>
-<h3>Assurance Habitation</h3>
-<p>Protection complète de votre logement, responsabilité civile, catastrophes naturelles. Formules modulables selon vos besoins.</p>
-<a href="#contact" class="card-link">En savoir plus →</a>
-</div>
-<div class="card">
-<div class="card-icon">🌍</div>
-<h3>Immigration Canada</h3>
-<p>Accompagnement assurances pour votre projet d'immigration. Couverture voyage, santé internationale, transfert de contrats.</p>
-<a href="#contact" class="card-link">En savoir plus →</a>
-</div>
-</div>
-</div>
-</section>
-<footer>
-<div class="container">
-<div class="footer-grid">
-<div>
-  <section id="contact" class="contact section" style="background: linear-gradient(135deg, #004aad 0%, #003d8f 100%); color: white;">
-<div class="container">
-<div class="section-header">
-<span class="tag" style="background: rgba(255,107,0,0.2); color: #ffaa66;">Contact</span>
-<h2 style="color: white;">Obtenez Votre Devis Gratuit</h2>
-<p style="color: rgba(255,255,255,0.8);">Réponse garantie en moins de 24h. Premier conseil offert.</p>
-</div>
-<div style="background: rgba(255,255,255,0.1); padding: 3rem; border-radius: 16px; max-width: 700px; margin: 0 auto;">
-<div style="margin-bottom: 2rem;">
-<p style="margin-bottom: 1rem;"><strong>📧 Email:</strong> youssef.bihi@conseil-assurance.ma</p>
-<p style="margin-bottom: 1rem;"><strong>📱 Téléphone:</strong> +212 6XX XXX XXX</p>
-<p style="margin-bottom: 1rem;"><strong>📍 Localisation:</strong> Rabat, Maroc | Canada</p>
-<p><strong>⏰ Horaires:</strong> Lun-Sam : 9h-18h</p>
-</div>
-<div style="background: white; padding: 2rem; border-radius: 12px; color: #333;">
-<h3 style="color: #004aad; margin-bottom: 1.5rem;">Demande de Devis</h3>
-<form id="contact-form">
-<div style="margin-bottom: 1rem;">
-<label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nom complet</label>
-<input type="text" name="nom" required style="width: 100%; padding: 10px; border: 1px solid #dde3f0; border-radius: 8px; font-size: 0.95rem;">
-</div>
-  <input type="hidden" name="_subject" value="Nouvelle demande de devis - YBConseil">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
-<div style="margin-bottom: 1rem;">
-<label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email</label>
-<input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #dde3f0; border-radius: 8px; font-size: 0.95rem;">
-</div>
-<div style="margin-bottom: 1rem;">
-<label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Type d'assurance</label>
-<select name="type" style="width: 100%; padding: 10px; border: 1px solid #dde3f0; border-radius: 8px; font-size: 0.95rem;">
-<option>Prévoyance / Vie</option>
-<option>RC Professionnelle</option>
-<option>Assurance Auto</option>
-<option>Habitation</option>
-<option>Package Freelance</option>
-<option>Immigration Canada</option>
-</select>
-</div>
-<div style="margin-bottom: 1.5rem;">
-<label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message</label>
-<textarea name="message" rows="4" style="width: 100%; padding: 10px; border: 1px solid #dde3f0; border-radius: 8px; font-size: 0.95rem;"></textarea>
-</div>
-<button type="submit" class="btn" style="width: 100%; background: #ff6b00; color: white; padding: 14px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 1rem;">Envoyer ma Demande</button><p id="form-status" style="margin-top:1rem;font-weight:bold;"></p><script>document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();var s=document.getElementById('form-status');s.textContent='Envoi en cours...';s.style.color='#004aad';emailjs.sendForm('service_q673b1m','template_x4h1uzd',this).then(function(){s.textContent='Message envoyé avec succès ! Je vous contacte dans 24h.';s.style.color='green';document.getElementById('contact-form').reset();},function(err){s.textContent='Erreur: '+JSON.stringify(err);s.style.color='red';});});</script><p id="form-status" style="margin-top:1rem;font-weight:bold;"></p><script>document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();var s=document.getElementById('form-status');s.textContent='Envoi en cours...';s.style.color='#004aad';emailjs.sendForm('service_q673b1m','template_x4h1uzd',this).then(function(){s.textContent='Message envoyé avec succès ! Je vous contacte dans 24h.';s.style.color='green';document.getElementById('contact-form').reset();},function(err){s.textContent='Erreur: '+JSON.stringify(err);s.style.color='red';});});</script><p id="form-status" style="margin-top:1rem;font-weight:bold;"></p><script>document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();var s=document.getElementById('form-status');s.textContent='Envoi en cours...';s.style.color='#004aad';emailjs.sendForm('service_q673b1m','template_x4h1uzd',this).then(function(){s.textContent='Message envoyé avec succès ! Je vous contacte dans 24h.';s.style.color='green';document.getElementById('contact-form').reset();},function(err){s.textContent='Erreur: '+JSON.stringify(err);s.style.color='red';});});</script>
-</form>
-</div>
-</div>
-</div>
-</section>
-<div class="logo">YB<span>Conseil</span></div>
-<p>Expert en assurance et conseil financier. Solutions IA pour optimiser votre protection.</p>
-</div>
-<div>
-<h4>Services</h4>
-<ul><li>Prévoyance & Vie</li><li>Assurance Auto</li><li>RC Professionnelle</li><li>Habitation</li></ul>
-</div>
-<div>
-<h4>Liens Utiles</h4>
-<ul><li><a href="#accueil">Accueil</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul>
-</div>
-<div>
-<h4>Suivez-moi</h4>
-<ul><li>LinkedIn</li><li>YouTube</li><li>TikTok</li></ul>
-</div>
-</div>
-<div class="footer-bottom">
-<p>© 2026 Youssef Bihi Conseil Assurance. Tous droits réservés.</p>
-</div>
-</div>
-</footer>
+
+  <header>
+    <nav>
+      <div class="logo">YB Conseil</div>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="accueil" class="hero">
+    <h1>Votre Expert en Assurance & Prévoyance</h1>
+    <p>Conseil personnalisé • Maroc & Canada • Solutions adaptées à votre situation</p>
+    <a href="#contact" class="cta-button">Demander un conseil gratuit</a>
+    
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-number">7+</span>
+        <span>Années d'expérience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">24h</span>
+        <span>Délai de réponse</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">100%</span>
+        <span>Conseil personnalisé</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Nos Solutions</h2>
+    <p class="subtitle">Des services adaptés à chaque étape de votre vie</p>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Assurance Vie & Épargne</h3>
+        <p>Constitution de capital, planification successorale et optimisation fiscale pour sécuriser votre avenir financier.</p>
+      </div>
+      
+      <div class="service-card">
+        <h3>Prévoyance Professionnelle</h3>
+        <p>Protection du dirigeant, garantie homme-clé et couverture adaptée aux entrepreneurs et indépendants.</p>
+      </div>
+      
+      <div class="service-card">
+        <h3>Santé & Protection Familiale</h3>
+        <p>Complémentaire santé, assurance décès et garanties pour protéger votre famille en toutes circonstances.</p>
+      </div>
+      
+      <div class="service-card">
+        <h3>Retraite & Capitalisation</h3>
+        <p>Préparation de votre retraite avec des solutions d'épargne long terme et de rente viagère.</p>
+      </div>
+      
+      <div class="service-card">
+        <h3>Assurance Automobile & Habitation</h3>
+        <p>Protection de vos biens avec des garanties adaptées à vos besoins réels et à votre budget.</p>
+      </div>
+      
+      <div class="service-card">
+        <h3>Accompagnement Expatriés</h3>
+        <p>Solutions spécifiques pour les expatriés entre le Maroc et le Canada, conformes aux réglementations locales.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="publics">
+    <h2>Pour Qui ?</h2>
+    <p class="subtitle">Des solutions adaptées à votre profil</p>
+    
+    <div class="publics-grid">
+      <div class="public-card">
+        <h3>Entrepreneurs & Dirigeants</h3>
+        <p>Protection de votre activité et de votre patrimoine professionnel</p>
+      </div>
+      
+      <div class="public-card">
+        <h3>Freelances & Indépendants</h3>
+        <p>Prévoyance adaptée à votre statut et à vos revenus variables</p>
+      </div>
+      
+      <div class="public-card">
+        <h3>Familles</h3>
+        <p>Sécurité financière et protection de vos proches</p>
+      </div>
+      
+      <div class="public-card">
+        <h3>Expatriés</h3>
+        <p>Solutions transfrontalières Maroc-Canada</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="methode">
+    <h2>Notre Méthode</h2>
+    <p class="subtitle">Un accompagnement personnalisé en 4 étapes</p>
+    
+    <div class="methode-steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Analyse</h3>
+        <p>Évaluation complète de votre situation personnelle et professionnelle</p>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Conseil</h3>
+        <p>Recommandations personnalisées basées sur vos besoins et objectifs</p>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Solution</h3>
+        <p>Mise en place des garanties adaptées avec les meilleurs partenaires</p>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Suivi</h3>
+        <p>Accompagnement continu et ajustement selon l'évolution de votre situation</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reassurance">
+    <h2>Pourquoi Nous Choisir ?</h2>
+    <ul>
+      <li>Conseiller certifié avec 7 ans d'expérience chez AXA</li>
+      <li>Expertise bi-nationale Maroc-Canada</li>
+      <li>Analyse personnalisée de votre situation</li>
+      <li>Indépendance et transparence dans nos recommandations</li>
+      <li>Réponse garantie sous 24h</li>
+      <li>Accompagnement dans la durée</li>
+    </ul>
+  </section>
+
+  <section id="avis" class="testimonials">
+    <h2>Ils Nous Font Confiance</h2>
+    <p class="subtitle">Témoignages de nos clients</p>
+    
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <p class="testimonial-text">Un accompagnement professionnel et à l'écoute. Youssef a su trouver la solution de prévoyance adaptée à mon statut d'entrepreneur.</p>
+        <p class="testimonial-author">— Karim, Dirigeant d'entreprise</p>
+      </div>
+      
+      <div class="testimonial">
+        <p class="testimonial-text">En tant qu'expatriée, j'avais besoin d'une couverture spécifique entre le Maroc et le Canada. Conseil clair et efficace.</p>
+        <p class="testimonial-author">— Sarah, Consultante internationale</p>
+      </div>
+      
+      <div class="testimonial">
+        <p class="testimonial-text">Réactif, disponible et de bon conseil pour la protection de ma famille. Je recommande vivement.</p>
+        <p class="testimonial-author">— Ahmed, Cadre supérieur</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Questions Fréquentes</h2>
+    
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">Comment se déroule un premier rendez-vous ?</div>
+        <div class="faq-answer">Le premier échange est gratuit et sans engagement. Nous analysons votre situation, vos besoins et vos objectifs pour vous proposer des recommandations personnalisées.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Quels sont vos tarifs ?</div>
+        <div class="faq-answer">Le conseil initial est gratuit. La rémunération se fait via les commissions des compagnies d'assurance, sans surcoût pour vous.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Travaillez-vous avec toutes les compagnies ?</div>
+        <div class="faq-answer">Je travaille principalement avec AXA, tout en gardant une approche indépendante pour vous orienter vers les solutions les plus adaptées à votre situation.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Accompagnez-vous les expatriés ?</div>
+        <div class="faq-answer">Oui, j'ai une expertise spécifique sur les solutions transfrontalières entre le Maroc et le Canada, conformes aux réglementations des deux pays.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Quel est votre délai de réponse ?</div>
+        <div class="faq-answer">Je m'engage à répondre à toute demande sous 24h ouvrées maximum.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-Nous</h2>
+    <p class="subtitle">Obtenez un conseil personnalisé gratuit</p>
+    
+    <form id="contact-form" class="contact-form">
+      <div class="form-group">
+        <label for="nom">Nom complet *</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone" name="telephone">
+      </div>
+      
+      <div class="form-group">
+        <label for="type">Type de demande *</label>
+        <select id="type" name="type" required>
+          <option value="">Sélectionnez...</option>
+          <option value="Assurance Vie">Assurance Vie & Épargne</option>
+          <option value="Prévoyance Pro">Prévoyance Professionnelle</option>
+          <option value="Santé">Santé & Protection Familiale</option>
+          <option value="Retraite">Retraite & Capitalisation</option>
+          <option value="Auto/Habitation">Automobile & Habitation</option>
+          <option value="Expatrié">Solutions Expatriés</option>
+          <option value="Autre">Autre demande</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Votre message *</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      
+      <button type="submit">Envoyer ma demande</button>
+      <div id="form-status"></div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 YB Conseil Assurance - Tous droits réservés</p>
+    <p>Expert en assurance et prévoyance | Maroc & Canada</p>
+  </footer>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // Initialisation EmailJS
+    emailjs.init("TvFsPbYdIxmRvvSGy");
+
+    // Gestion du formulaire
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var statusEl = document.getElementById('form-status');
+      statusEl.textContent = 'Envoi en cours...';
+      statusEl.style.color = '#004aad';
+
+      emailjs.sendForm('service_nh3lxqd', 'template_x4h1uzd', this)
+        .then(() => {
+          statusEl.textContent = 'Message envoyé avec succès ! Je vous contacte sous 24h.';
+          statusEl.style.color = 'green';
+          this.reset();
+        })
+        .catch((err) => {
+          statusEl.textContent = 'Erreur lors de l\'envoi. Veuillez réessayer.';
+          statusEl.style.color = 'red';
+          console.error('EmailJS Error:', err);
+        });
+    });
+
+    // FAQ accordéon
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+  
+  <!-- Données structurées -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "YB Conseil Assurance",
+    "description": "Expert en assurance et prévoyance au Maroc et Canada",
+    "url": "https://ybihi001-dot.github.io/ybconseil-assurance/",
+    "areaServed": ["MA", "CA"],
+    "priceRange": "Consultation gratuite"
+  }
+  </script>
+
 </body>
 </html>
